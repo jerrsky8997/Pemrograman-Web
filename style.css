@@ -214,3 +214,170 @@ footer {
     padding: 15px;
     color: white;
 }
+/* ================= BIODATA CARD ================= */
+.card {
+    max-width: 850px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ================= HEADER CARD ================= */
+.header {
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    color: white;
+    padding: 30px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: white;
+    color: #6c5ce7;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.header-text h1 {
+    margin: 5px 0;
+    color: white;
+    font-size: 28px;
+}
+
+.label-small {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.tagline {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ================= DIVIDER ================= */
+.divider {
+    height: 4px;
+    background: linear-gradient(90deg, #00cec9, #6c5ce7);
+}
+
+/* ================= BODY CARD ================= */
+.body {
+    padding: 30px;
+}
+
+/* ================= SECTION ================= */
+.section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6c5ce7;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* ================= DATA GRID ================= */
+.data-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-key {
+    font-weight: bold;
+    color: #2d3436;
+    width: 40%;
+    text-align: left;
+}
+
+.data-val {
+    width: 60%;
+    text-align: left;
+    color: #636e72;
+}
+
+/* ================= CHIPS ================= */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    background: #6c5ce7;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ================= QUOTE ================= */
+.quote-box {
+    background: #dfe6e9;
+    padding: 15px;
+    border-left: 5px solid #6c5ce7;
+    border-radius: 10px;
+    font-style: italic;
+    color: #2d3436;
+    text-align: left;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #2d3436;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .data-key,
+    .data-val {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
